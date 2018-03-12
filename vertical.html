@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>Vidhista Green Solutions</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript">
+$("#slideshow > div:gt(0)").hide();
+
+setInterval(function() { 
+  $('#slideshow > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow');
+},  3000);
+</script>
+</head>
+
+<body>
+<div id="header">
+<img src="header.png"/>
+
+<div id="nav">
+<ul>
+ <li> HOME </li>
+ <li> ABOUT </li>
+ <li> SERVICES 
+		<ul> <a href="vertical.html"><li>Vertical Gardening </li></a> <a href="land.html"><li>Lanscaping<br> </li></a><a href="terrace.html"> <li>Terrace Gardening </li></a> </ul> 
+ </li>
+ <li> CONTACT </li>
+</ul>
+</div>
+
+
+</div>
+<div id="content">
+
+
+  <div id="slideshow">
+   				<div><img src="images/image_23.jpeg" height="100%" width="100%"></div>
+   				<div><img src="images/image_26.jpeg" height="100%" width="100%"></div>
+   				<div><img src="images/image_37.jpeg" height="100%" width="100%"></div>
+    </div>
+    
+  <div id="contentleft">
+  <ul><a href="ss.html"> <li><br> VERTICAL GARDENING </li></a>
+      <a href="ss.html"> <li><br> LANDSCAPING </li></a>
+      <a href="ss.html"> <li><br> TERRACE GARDENING </li></a>
+  </ul>  
+</div> 
+
+ <div id="contentbottom">
+</div>
+
+
+
+
+   
+</div>
+
+
+<div id="footer">Footer</div>
+
+
+</body>
+</html>
